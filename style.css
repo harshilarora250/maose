@@ -24,7 +24,6 @@
 body {
     background-image: url('assets/desktop-wallpaper.jpg');
 }
-
 .welcome-container {
 /* Your exact styles */
   background-color: #F55F44;
@@ -43,6 +42,7 @@ body {
 }
 
 .welcome-main {
+    font-size: 50px;
     font-family: 'Jersey 10 Charted', sans-serif;
     color: yellowgreen, black;
     text-align: center;
@@ -50,7 +50,13 @@ body {
 }
 
 .welcome-sub {
+    font-size: 20px;
     font-family: "PlayWrite NZ Guides", cursive;
     text-align: center;
     margin-top: 5px;
+}
+
+.welcome-setup-divider {
+    margin: 5px 0;
+    max-width: 450px;
 }
