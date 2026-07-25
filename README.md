@@ -4,8 +4,8 @@
 MaOSe is a personal web-os for....... stuff?
 
 ## Built with 
-*<img src="assets/htmlimg.png" width="100">
-*<img src="assets/cssimg.jpeg" width="100">
+<img src="assets/htmlimg.png" width="100">
+<img src="assets/cssimg.jpeg" width="100">
 
 ## Getting Started
 Make sure you have VS Code Installed with the [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension installed.
