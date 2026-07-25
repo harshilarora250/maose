@@ -1,3 +1,17 @@
 body {
     background-image: url('assets/desktop-wallpaper.jpg');
 }
+
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F55F44;
+    height: 500px;
+    margin: 0;
+}
+
+.welcome-main {
+    font-family: 'Jersey 10 Charted', sans-serif;
+    color: yellowgreen, black;
+}
