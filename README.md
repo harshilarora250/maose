@@ -1,4 +1,4 @@
-<img align="right" src="assets/hc.png">
+<img align="right" src="assets/hc.png" width="100">
 
 # maose
 MaOSe is a personal web-os for....... stuff?
