@@ -1,4 +1,4 @@
-<img align="right" src="assets/hc.png" width="100">
+<img align="left" src="assets/hc.png" width="100">
 
 # maose
 MaOSe is a personal web-os for....... stuff?
@@ -22,7 +22,8 @@ cd maose #now follow the instructions above
 You can use this as a fun little party trick. Trick your friends, if you have friends ig.
 
 ## AI Usage
-AI was used in this project for the stupidest things and **bugs**.
+AI was used in this project for the stupidest things and **bugs**. You can see where I used AI with the lookout recording as well.
+
 <img align="center" src="assets/bluedeath.jpg">
 
 ## Time Recording (HC)
