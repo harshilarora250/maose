@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MaOSe - WebOS</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="welcome.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Jersey+10+Charted&display=swap" rel="stylesheet">
@@ -25,9 +25,10 @@
         <br>
         <input class="name-input" type="text" name="yourName">
         <br>
-        <label class="username-setup" for="username">What do you want your username to be?<span style="color: red;">*</span></label>
         <br>
-        <input class="username-input" type="text" name="yourUsername">
+        <label class="username-setup" for="username" required>What do you want your username to be?<span style="color: red;">*</span></label>
+        <br>
+        <input id="username-input" class="username-input" type="text" name="yourUsername" required>
         <br>
         <br>
         <a class="letsgo" href="welcome.html">Let's go!</a>

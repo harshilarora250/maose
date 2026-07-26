@@ -1,5 +1,21 @@
 const { animate, hover, scroll } = Motion;
 
+const USERNAME = document.getElementById("username-input");
+const letsGo = document.querySelector(".letsgo");
+
+letsGo.addEventListener("click", (e) => {
+    if (USERNAME.value.trim() === "") {
+    e.preventDefault(); // Stop the page changing immediately
+    alert("Please enter a username");
+    return;
+}
+ localStorage.setItem("username", USERNAME.value);
+    window.location.href = "welcome.html"; // or whatever page you want
+    console.log("Welcome", USERNAME.value)});
+
+
+
+
 hover(".letsgo", (element) => {
     console.log("hover started on", element);
     animate(

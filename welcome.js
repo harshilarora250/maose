@@ -1,10 +1,19 @@
 const { animate, hover, scroll } = Motion;
 
+const savedUser = localStorage.getItem("username");
+const accountPref = document.getElementById("account")
+const languageScreen = document.querySelector(".letsgo")
 
-const count = document.getElementById("count")
+if (savedUser) {
+document.getElementById("welcome-user").textContent = `Hello, ${savedUser}`
+} else {
+    document.getElementById("welcome-user").textContent=`Hello, Guest`
+}
 
-animate (0,100, {
-    duration: 5,
-    ease: "circOut",
-    onUpdate: (latest) => (count.innerHTML = Math.round(latest)),
-})
+languageScreen.addEventListener("click", (e) => {
+    localStorage.setItem("account", accountPref.value);
+    window.location.href = "language.html";
+    console.log("Understood", accountPref.value)
+});
+
+console.log(savedUser);

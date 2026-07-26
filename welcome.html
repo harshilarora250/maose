@@ -3,10 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MaOSe - Welcome!</title>
+    <title>MaOSe - Setup</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Jersey+10+Charted&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Guides&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
+    <img class="son" src="assets/son.png">
+    <div class="welcome-container">
+        <img class="hc" src="assets/hc.png">
+        <h1 class="welcome-main">MaOSe</h1>
+        <p class="welcome-sub">Continue setting up</p>
+        <hr class="welcome-setup-divider">
+        <h2 id="welcome-user" class="setup">Hello</h2>
+        <label class="name-setup" for="account">Would you like to create an account?<span style="color: red;">*</span></label>
+        <br>
+        <select id="account" name="yes-no">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <br>
+        <br>
+        <a class="letsgo" href="language.html">Continue</a>
+    </div>
+
+
 <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
-    <script src="welcome.js"></script>
+<script src="welcome.js"></script>
 </body>
 </html>
