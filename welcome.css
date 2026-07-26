@@ -115,3 +115,7 @@ a {
         line-height: 1;
         color: var(--hue-6);
  }
+
+ .account-option {
+    background-color: #FFC373;
+ }

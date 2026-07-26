@@ -1,10 +1,12 @@
 const { animate, hover, scroll } = Motion;
 
+//Main functions
 const USERNAME = document.getElementById("username-input");
 const letsGo = document.querySelector(".letsgo");
+const NAME = document.getElementById("name-input")
 
 letsGo.addEventListener("click", (e) => {
-    if (USERNAME.value.trim() === "") {
+    if (USERNAME.value.trim()  === "") {
     e.preventDefault(); // Stop the page changing immediately
     alert("Please enter a username");
     return;
@@ -15,7 +17,7 @@ letsGo.addEventListener("click", (e) => {
 
 
 
-
+//Animations Below:
 hover(".letsgo", (element) => {
     console.log("hover started on", element);
     animate(
@@ -27,7 +29,7 @@ hover(".letsgo", (element) => {
         animate(
             element,
             { scale: 1 },
-            { duration: 0.3 },
+            { duration: 0.3 }
         );
     };
 });
