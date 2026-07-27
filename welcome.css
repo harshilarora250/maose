@@ -103,6 +103,7 @@ body {
     border-radius: 20px;
     background: #8CDFC8;
     color: black;
+    border-width: 0;
 }
 a {
   text-decoration: none;
@@ -118,4 +119,7 @@ a {
 
  .account-option {
     background-color: #FFC373;
+    border-radius: 50px;
+    border-width: 5px;
+    border-color: #993CCF;
  }
