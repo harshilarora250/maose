@@ -1,0 +1,102 @@
+::selection {
+    background-color: #993CCF;
+    color: #FFA937;
+}
+
+.hc {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+
+.son {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+
+body {
+    background-image: url('assets/desktop-wallpaper.jpg');
+}
+.welcome-container {
+/* Your exact styles */
+  background-color: #F55F44;
+  border-radius: 15px;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.2);
+
+  /* The centering magic */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Ensures it sits on top of all other page content */
+}
+
+.welcome-main {
+    font-size: 50px;
+    font-family: 'Jersey 10 Charted', sans-serif;
+    color: yellowgreen, black;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.welcome-sub {
+    font-size: 20px;
+    font-family: "PlayWrite NZ Guides", cursive;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.welcome-setup-divider {
+    margin: 5px 0;
+    max-width: 450px;
+}
+
+.setup {
+    font-family: "Fontdiner Swanky", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.name-setup {
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+
+.letsgo {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    justify-content: center;
+    max-width: 150px;
+    font-size: 25px;
+    border-radius: 20px;
+    background: #8CDFC8;
+    color: black;
+    border-width: 0;
+}
+ .email {
+    background-color: #FFC373;
+    border-radius: 50px;
+    border-width: 3px;
+    border-color: #993CCF;
+ }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MaOSe - Create account</title>
-       <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="account.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Jersey+10+Charted&display=swap" rel="stylesheet">
@@ -14,6 +14,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+       <img class="son" src="assets/son.png">
+    <div class="welcome-container">
+        <img class="hc" src="assets/hc.png">
+        <h1 class="welcome-main">MaOSe</h1>
+        <p class="welcome-sub">Let's get you an account</p>
+        <hr class="welcome-setup-divider">
+        <h2 id="welcome-user" class="setup"></h2>
+        <label class="name-setup" for="account">What's your email?<span style="color: red;">*</span></label>
+        <br>
+        <input id="email" class="email">
+        <br>
+        <input id="password" class="email" hidden>
+        <br>
+        <br>
+        <button id="letsgo" class="letsgo">continue</button> 
+
+
+<script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+<script src="account.js"></script>
 </body>
 </html>
