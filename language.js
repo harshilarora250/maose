@@ -12,5 +12,5 @@ if (savedUser) {
 } else {
     document.getElementById("welcome-user").textContent(`Logged in as guest`)
     console.log("Hacker detected! continuining...")
-    window.location.href = "hacker.html"
+    window.location.href = "hacker.html";
 }
