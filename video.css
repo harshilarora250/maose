@@ -1,5 +1,8 @@
 .video {
-    width: 150vh;
-    height: 150vh;
-    justify-content: center;
+   size: 100vh;
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
 }
