@@ -10,15 +10,26 @@
     top: 0;
     left: 0;
 }
+
+.acc {
+     position: absolute;
+    display: block;
+    width: 35px;
+    height: auto;
+    top: 10px;
+    left: 185vh;
+}
 body {
     background-image: url('assets/desktop-wallpaper.jpg');
 }
 
 .notes-text{
+    font-family: "Seaweed Script", cursive;
+    font-size: x-large;
     color: black;
     position: absolute;
     display: block;
-    left: 5;
+    left: 2;
 }
 
 .notes {
@@ -27,7 +38,7 @@ body {
     display: block;
     width: 40px;
     height: 40px;
-    top: 500px;
-    left: 10;
+    top: 100px;
+    left: 50px;
 }
 
