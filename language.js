@@ -15,8 +15,12 @@ if (savedUser) {
     window.location.href = "hacker.html";
 }
 
+letsGo.addEventListener("click", (e) => {
+    window.location.href = "video.html";
+});
+
 //Animation Begin!
-hover(".letsgo", (element) => {
+hover(".letsGo", (element) => {
     console.log("hovering", element);
     animate(
         element,
