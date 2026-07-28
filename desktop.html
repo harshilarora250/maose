@@ -10,9 +10,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button id="acc"><img class="acc" src="assets/account.png"></button>
+    <button id="acc" class="acc"><img class="acc-image" src="assets/account.png"></button>
     <img class="hc" src="assets/hc.png">
     <button id="notes" class="notes"><img src="notes"><p class="notes-text">Notes</p></button>
+    <div id="acc-menu" class="acc-menu" hidden>
+    <h1 id="user" class="user-text">hi</h1>
+    <button id="logout" class="logout">Log Out?</button>
+    <br>
+    <button id="close" class="logout">X</button>
+    </div>
 
 <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
 <script src="desktop.js"></script>

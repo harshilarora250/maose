@@ -14,11 +14,22 @@
 .acc {
      position: absolute;
     display: block;
-    width: 35px;
+    width: 50px;
     height: auto;
     top: 10px;
     left: 185vh;
+    height: 50px;
+    opacity: .5;
 }
+
+.acc-image {
+    display: block;
+    width: 50px;
+    height: 50px;
+    top: 5px;
+    left: 0vh;
+}
+
 body {
     background-image: url('assets/desktop-wallpaper.jpg');
 }
@@ -42,3 +53,39 @@ body {
     left: 50px;
 }
 
+.acc-menu {
+      background-color: #F55F44;
+  border-radius: 15px;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.2);
+
+  /* The centering magic */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Ensures it sits on top of all other page content */
+}
+
+.user-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.logout {
+     align-items: center;
+    align-content: center;
+    display: flex;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    justify-content: center;
+    max-width: 150px;
+    font-size: 15px;
+    border-radius: 20px;
+    background: #8CDFC8;
+    color: black;
+    margin-top: 15px;
+}
