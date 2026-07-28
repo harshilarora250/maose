@@ -7,12 +7,27 @@ const email = localStorage.getItem("email-value")// Get email value from HTML (i
 
 //Show username begin
 if (savedUser) {
-    document.getElementById("welcome-user").textContent(`Logged in as - ${savedUser}`)
+    document.getElementById("welcome-user").textContent = (`Logged in as - ${savedUser}`);
     console.log("User detected!", savedUser.value)
 } else {
-    document.getElementById("welcome-user").textContent(`Logged in as guest`)
+    document.getElementById("welcome-user").textContent = (`Logged in as guest`);
     console.log("Hacker detected! continuining...")
     window.location.href = "hacker.html";
 }
 
 //Animation Begin!
+hover(".letsgo", (element) => {
+    console.log("hovering", element);
+    animate(
+        element,
+        { scale: 1.1 },
+        { duration: 0.3 }
+    );
+    return () => {
+        animate(
+            element,
+            { scale: 1 },
+            { duration: 0.3 }
+        )
+    };
+});
