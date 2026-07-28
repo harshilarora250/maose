@@ -88,4 +88,10 @@ body {
     background: #8CDFC8;
     color: black;
     margin-top: 15px;
+    justify-content: center;
+}
+
+.actual-note {
+    width: 450px;
+    max-height: 400px;
 }

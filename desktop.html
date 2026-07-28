@@ -12,12 +12,20 @@
 <body>
     <button id="acc" class="acc"><img class="acc-image" src="assets/account.png"></button>
     <img class="hc" src="assets/hc.png">
-    <button id="notes" class="notes"><img src="notes"><p class="notes-text">Notes</p></button>
+    <button id="notes-btn" class="notes"><img src="notes"><p class="notes-text">Notes</p></button>
     <div id="acc-menu" class="acc-menu" hidden>
     <h1 id="user" class="user-text">hi</h1>
     <button id="logout" class="logout">Log Out?</button>
     <br>
     <button id="close" class="logout">X</button>
+    </div>
+
+    <div id="notes-menu" class="acc-menu" hidden>
+        <h1 class="user-text">Your one and only "file.txt" (which you can't export or edit btw cause i'm mean)</h1>
+        <input id="file" class="actual-note" type="text">
+        <br>
+        <button id="close-notes" class="logout">X</button>
+        <button id="save-notes" class="logout">Save notes</button>
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
