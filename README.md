@@ -1,7 +1,9 @@
 <img align="left" src="assets/hc.png" width="100">
 
 # maose
-MaOSe is a personal web-os for....... stuff?
+MaOSe is a personal web-os where you can make notes (which you can't export)
+
+<img src="assets/example.png" align="center">
 
 ## Built with 
 <img src="assets/htmlimg.png" width="100">

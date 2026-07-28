@@ -9,7 +9,7 @@ const savedUser = localStorage.getItem("username") // Username for - acc menu
 const closeNotes = document.getElementById("close-notes") // Close notes button
 const notesMenu = document.getElementById("notes-menu") // Actual notes menu
 const notesBtn = document.getElementById("notes-btn")
-const notes = document.querySelector(".file") // Actual notes
+const notes = document.getElementById("file") // Actual notes
 const saveNotes = document.getElementById("save-notes") // Save notes button
 
 // Account Menu
@@ -43,9 +43,18 @@ closeNotes.addEventListener("click", (e) => {
     notesMenu.hidden = true;
 })
 
+saveNotes.addEventListener("click", (e) => {
+    if (notes === "") {
+    console.log(notes)
+    localStorage.setItem("notes", notes.value);
+    } else {
+         document.getElementById("nomore").textContent = `No more notes for you, ${savedUser} (fun fact, clear your local storage for more)`
+        
+    }
+});
+
 //Animations below
 hover(".logout", (element) => {
-    console.log("hovering", element);
     animate(
         element,
         { scale: 1.1 },
