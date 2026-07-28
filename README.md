@@ -32,4 +32,4 @@ AI was used in this project for the stupidest things and **bugs**. You can see w
 I used [lookout](https://lookout.hackclub.com/) because my Waka/Hacka time didn't work properly and under-record time, and I couldn't record hours outside of VS Code
 
 ## Contribution
-This project was developed by [Harshil Arora](elipseday-nine.vercel.app/#contact)
+This project was developed by [Harshil Arora](https://elipseday-nine.vercel.app/#contact)
