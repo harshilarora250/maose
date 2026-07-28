@@ -14,3 +14,5 @@ if (savedUser) {
     console.log("Hacker detected! continuining...")
     window.location.href = "hacker.html";
 }
+
+//Animation Begin!
