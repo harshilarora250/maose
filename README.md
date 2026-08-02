@@ -24,7 +24,7 @@ cd maose #now follow the instructions above
 You can use this as a fun little party trick. Trick your friends, if you have friends ig.
 
 ## AI Usage
-AI was used in this project for the stupidest things and **bugs**. You can see where I used AI with the lookout recording as well. I also used AI to learn about the motion.dev animations and stuff to refine maose even more
+AI was used in this project for the stupidest things and **bugs**. You can see where I used AI with the lookout recording as well. I also used AI to learn about the motion.dev animations and stuff to refine maose even more. You can have a better idea by looking at the clip in lapse
 
 <img align="center" src="assets/bluedeath.jpg">
 
