@@ -1,7 +1,7 @@
 <img align="left" src="assets/hc.png" width="100">
 
 # maose
-MaOSe is a personal web-os where you can make notes (which you can't export or edit after once unless you know the funfact)
+MaOSe is a note making (web-os **like** platform). Make notes, save to clipboard (if you click the button). Fun Fact: You lose progress if you change the note!
 
 <img src="assets/example.png" align="center">
 
