@@ -13,6 +13,7 @@
     <button id="acc" class="acc"><img class="acc-image" src="assets/account.png"></button>
     <button id="notes-btn" class="notes"><img src="notes"><p class="notes-text">Notes</p></button>
     <button id="curnt-notes" class="savednotes">Saved Note</button>
+    <button id="copied" class="savednotes" hidden>Copied to cliboard!</button>
     <div id="acc-menu" class="acc-menu" hidden>
     <h1 id="user" class="user-text">hi</h1>
     <button id="logout" class="logout">Log Out?</button>
@@ -21,7 +22,7 @@
     </div>
 
     <div id="notes-menu" class="acc-menu" hidden>
-        <h1 class="user-text">Your one and only "file.txt" (which you can't export btw cause i'm mean)</h1>
+        <h1 class="user-text">It saves to clipboard and local storage, if you save again, you lose it.</h1>
         <input id="file" class="actual-note" type="text">
         <br>
         <button id="close-notes" class="logout">X</button>

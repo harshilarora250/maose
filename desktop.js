@@ -11,14 +11,15 @@ const notesMenu = document.getElementById("notes-menu") // Actual notes menu
 const notesBtn = document.getElementById("notes-btn")
 const notes = document.getElementById("file") // Actual notes
 const saveNotes = document.getElementById("save-notes") // Save notes button
-const savednotes = localStorage.getItem("notes")
+const notebtn = document.getElementById("curnt-notes")
+const clipboard = document.getElementById("copied")
 
 // Account Menu
 if (savedUser) {
     document.getElementById("user").textContent = `Logged in as ${savedUser}`
 } else {
     document.getElementById("user").textContent = `Interesting... I've got a hacker to deal with`
- }
+}
 
 acc.addEventListener("click", (e) => {
     accmenu.hidden = false;
@@ -26,7 +27,7 @@ acc.addEventListener("click", (e) => {
 
 logout.addEventListener("click", (e) => {
     console.log("We're sorry to see you go, logged out.")
-       window.location.href = "index.html"
+    window.location.href = "index.html"
     localStorage.setItem("email-value", "")
     localStorage.setItem("username", "")
 });
@@ -35,7 +36,7 @@ closemenu.addEventListener("click", (e) => {
     accmenu.hidden = true;
 });
 
-//Notes menu
+// Notes menu
 notesBtn.addEventListener("click", (e) => {
     notesMenu.hidden = false;
 })
@@ -45,16 +46,36 @@ closeNotes.addEventListener("click", (e) => {
 })
 
 saveNotes.addEventListener("click", (e) => {
-    if (notes === "") {
-    alert("There are no notes-write to have more")
+    if (notes.value.trim() === "") {
+        alert("There are no notes-write to have more")
     } else {
-         document.getElementById("nomore").textContent = `No more notes for you, ${savedUser} (fun fact, clear your local storage for more)`
-         console.log(savednotes)
+        document.getElementById("nomore").textContent = `It saves to clipboard (ahawhen you click the button in top-left) and local storage, if you save again, you lose it.`
+
         localStorage.setItem("notes", notes.value);
+        console.log(localStorage.getItem("notes"))
     }
 });
 
-//Animations below
+notebtn.addEventListener("click", (e) => {
+    const savednotes = localStorage.getItem("notes");
+
+    if (!savednotes) {
+        alert("No notes saved.");
+        return;
+    }
+
+    navigator.clipboard.writeText(savednotes);
+    notebtn.hidden = true;
+    clipboard.hidden = false;
+
+    setTimeout(() => {
+        notebtn.hidden = false;
+        clipboard.hidden = true;
+    }, 3000);
+    console.log("Saved to clipboard!")
+})
+
+// Animations below
 hover(".logout", (element) => {
     animate(
         element,
