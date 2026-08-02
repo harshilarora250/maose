@@ -11,6 +11,7 @@ const notesMenu = document.getElementById("notes-menu") // Actual notes menu
 const notesBtn = document.getElementById("notes-btn")
 const notes = document.getElementById("file") // Actual notes
 const saveNotes = document.getElementById("save-notes") // Save notes button
+const savednotes = localStorage.getItem("notes")
 
 // Account Menu
 if (savedUser) {
@@ -45,11 +46,11 @@ closeNotes.addEventListener("click", (e) => {
 
 saveNotes.addEventListener("click", (e) => {
     if (notes === "") {
-    console.log(notes)
-    localStorage.setItem("notes", notes.value);
+    alert("There are no notes-write to have more")
     } else {
          document.getElementById("nomore").textContent = `No more notes for you, ${savedUser} (fun fact, clear your local storage for more)`
-        
+         console.log(savednotes)
+        localStorage.setItem("notes", notes.value);
     }
 });
 
